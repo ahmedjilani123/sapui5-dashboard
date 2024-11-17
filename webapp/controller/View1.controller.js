@@ -1,6 +1,6 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    'sap/m/BusyIndicator',
+    'sap/ui/core/BusyIndicator',
     'sap/ui/export/library',
     'sap/ui/export/Spreadsheet',
     "sap/ui/core/Fragment"
@@ -11,9 +11,7 @@ sap.ui.define([
         var EdmType = exportLibrary.EdmType;
         return Controller.extend("sap.aj.biochart.controller.View1", {
             onInit: function () { 
-                new sap.m.BusyIndicator({
-                    customIcon:"sap-icon://edit"
-                })  
+              
             },
             onAfterRendering: function () {
                 var MainSubData = [{
